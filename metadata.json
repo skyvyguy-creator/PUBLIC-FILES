@@ -2,5 +2,7 @@
   "name": "Skyvero Hidayatullah Pardi — Rekam Arsip Akademik",
   "description": "Portofolio & Rekam Arsip Akademik Skyvero Hidayatullah Pardi (S1 Teknik Informatika ITPLN 2026), Debater Parlemen, dan Karya Material Mandiri.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
