@@ -1,0 +1,878 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Skyvero Hidayatullah Pardi — Portofolio &amp; Rekam Arsip Akademik (ITPLN 2026)</title>
+<!-- Google Fonts: Newsreader, Plus Jakarta Sans, JetBrains Mono, Cinzel -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with DESIGN_SYSTEM_19 theme tokens -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#7a0016",
+          "primary-container": "#9e1b28",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#ffafad",
+          "secondary": "#775a00",
+          "secondary-container": "#fed269",
+          "secondary-fixed": "#ffdf99",
+          "surface": "#fbf8ff",
+          "surface-bright": "#fbf8ff",
+          "surface-dim": "#dad9e3",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f4f2fd",
+          "surface-container": "#eeedf7",
+          "surface-container-high": "#e8e7f1",
+          "surface-container-highest": "#e3e1ec",
+          "background": "#fbf8ff",
+          "on-background": "#1a1b22",
+          "on-surface": "#1a1b22",
+          "on-surface-variant": "#594140",
+          "outline": "#8d706f",
+          "outline-variant": "#e1bfbd",
+          "paper": {
+            DEFAULT: '#FAF8F5',
+            subtle: '#F4EFEA',
+            darker: '#EAE3D7',
+            line: '#DCD4C7'
+          },
+          "ink": {
+            DEFAULT: '#1A1B22',
+            light: '#2E3038',
+            muted: '#594140',
+            soft: '#7E6B6A'
+          },
+          "crimson": {
+            DEFAULT: '#9E1B28',
+            dark: '#7A0016',
+            light: '#FFDAD8',
+            border: '#E1BFBD'
+          },
+          "bronze": {
+            DEFAULT: '#775A00',
+            muted: '#C5A059',
+            light: '#FFF2D6',
+            dark: '#5A4300'
+          },
+          "forest": {
+            DEFAULT: '#1E6346',
+            light: '#EDF6F1'
+          }
+        },
+        fontFamily: {
+          cinzel: ['Cinzel', 'serif'],
+          serif: ['Newsreader', 'Georgia', 'serif'],
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace']
+        },
+        boxShadow: {
+          'subtle-card': '0 4px 20px -2px rgba(26, 27, 34, 0.05), 0 2px 6px -1px rgba(26, 27, 34, 0.03)',
+          'editorial': '5px 5px 0px #1A1B22',
+          'editorial-crimson': '5px 5px 0px #9E1B28',
+          'editorial-bronze': '5px 5px 0px #775A00'
+        }
+      }
+    }
+  };
+</script>
+<style>
+    :root {
+      --bg-paper: #FAF8F5;
+      --text-ink: #1A1B22;
+    }
+    body {
+      background-color: var(--bg-paper);
+      color: var(--text-ink);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-image: radial-gradient(rgba(26, 27, 34, 0.035) 1px, transparent 0);
+      background-size: 28px 28px;
+    }
+
+    /* Shelf Horizontal Scroll Track */
+    .shelf-track::-webkit-scrollbar {
+      height: 6px;
+    }
+    .shelf-track::-webkit-scrollbar-track {
+      background: #EAE3D7;
+      border-radius: 9999px;
+    }
+    .shelf-track::-webkit-scrollbar-thumb {
+      background: #9E1B28;
+      border-radius: 9999px;
+    }
+
+    /* Pure Typographic Tactile Cassette Spine */
+    .vhs-spine {
+      transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+      cursor: pointer;
+      position: relative;
+    }
+    .vhs-spine::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 3px;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.22);
+      pointer-events: none;
+    }
+    .vhs-spine::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 3px;
+      width: 2px;
+      background: rgba(0, 0, 0, 0.28);
+      pointer-events: none;
+    }
+    .vhs-spine:hover {
+      transform: translateY(-14px);
+      box-shadow: 0 16px 24px -6px rgba(26, 27, 34, 0.35);
+    }
+    .vhs-spine.active-tape {
+      transform: translateY(-20px);
+      box-shadow: 0 20px 30px -8px rgba(158, 27, 40, 0.45), 0 0 0 2px #9E1B28;
+    }
+
+    /* Vertical Spine Typography */
+    .spine-title-vertical {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    }
+</style>
+</head>
+<body class="selection:bg-crimson selection:text-white" style="background-color: rgb(235, 243, 250); color: rgb(26, 27, 34); font-family: &quot;Plus Jakarta Sans&quot;, sans-serif; background-image: radial-gradient(rgba(30, 60, 90, 0.06) 1px, transparent 0px); background-size: 28px 28px;">
+<!-- BEGIN: Sticky Navigation -->
+<header class="sticky top-0 w-full backdrop-blur-md bg-[#FAF8F5]/95 border-b border-paper-line z-50 transition-all duration-200" data-purpose="global-navigation" style="background-color: rgba(235, 243, 250, 0.95); border-color: rgb(203, 219, 232);">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Monogram & Title -->
+<a aria-label="Beranda Skyvero" class="flex items-center gap-3.5 group focus:outline-none" href="#hero">
+<div class="w-10 h-10 rounded-sm bg-primary-container text-white flex items-center justify-center font-cinzel font-bold text-base border border-primary-container shadow-sm group-hover:bg-ink transition-colors">
+        VP
+      </div>
+<div class="flex flex-col">
+<span class="font-cinzel font-bold text-sm tracking-widest text-ink uppercase group-hover:text-crimson transition-colors">
+          SKYVERO PARDI
+        </span>
+<span class="font-mono text-[10px] tracking-wider text-ink-muted">
+          S1 INFORMATIKA ITPLN • REKAM ARSIP
+        </span>
+</div>
+</a>
+<!-- Jump Navigation Links (Bahasa Indonesia) -->
+<nav aria-label="Navigasi Utama" class="hidden md:flex items-center space-x-7 text-xs uppercase tracking-widest font-mono font-medium text-ink-light">
+<a class="hover:text-crimson transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1.5px] after:bg-crimson after:transition-all" href="#profile">TENTANG</a>
+<a class="hover:text-crimson transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1.5px] after:bg-crimson after:transition-all" href="#showcase">RAK ARSIP</a>
+<a class="hover:text-crimson transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1.5px] after:bg-crimson after:transition-all" href="#education">PENDIDIKAN</a>
+<a class="hover:text-crimson transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1.5px] after:bg-crimson after:transition-all" href="#achievements">PRESTASI</a>
+<a class="hover:text-crimson transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[1.5px] after:bg-crimson after:transition-all" href="#toolkit">KEAHLIAN &amp; ALAT</a>
+</nav>
+<!-- Right Direct Call-to-Action -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase font-mono font-semibold tracking-wider text-white bg-primary-container hover:bg-primary border border-primary-container hover:border-primary transition-all duration-200 rounded-sm shadow-editorial-crimson hover:shadow-editorial active:translate-x-0.5 active:translate-y-0.5" href="#contact">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span>HUBUNGI SAYA</span>
+</a>
+</div>
+</div>
+</header>
+<!-- END: Sticky Navigation -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="pt-16 pb-20 border-b border-paper-line" id="hero">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Eyebrow Ribbon -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-paper-line mb-8">
+<div class="inline-flex items-center gap-2.5 bg-paper-subtle border border-paper-line px-3 py-1 rounded-sm text-[11px] font-mono tracking-widest text-ink">
+<span class="w-2 h-2 rounded-full bg-crimson"></span>
+<span>REKAM ARSIP &amp; PORTOFOLIO // 2024–SEKARANG</span>
+</div>
+<span class="text-xs font-mono text-ink-muted">JAKARTA &amp; SOLOK, SUMATERA BARAT</span>
+</div>
+<!-- Headline & Bio Header -->
+<div class="max-w-4xl">
+<span class="text-xs sm:text-sm font-mono tracking-widest text-crimson uppercase block mb-3 font-semibold">
+          MAHASISWA S1 TEKNIK INFORMATIKA • DEBATER PARLEMEN • SPESIALIS DOKUMEN &amp; GRAFIS
+        </span>
+<h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-ink uppercase leading-none mb-6">
+          Skyvero Hidayatullah Pardi
+        </h1>
+<p class="text-base sm:text-xl text-ink-muted max-w-3xl font-serif italic leading-relaxed">
+          Menjembatani ketelitian logika akademik dan algoritma dengan wacana publik serta narasi visual. Mengarsipkan rekam jejak studi di Institut Teknologi PLN, prestasi debat kompetitif, dan keahlian tata letak dokumen praktis.
+        </p>
+</div>
+<!-- Quick Stats & Alignment Bar -->
+<div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl pt-8 border-t border-paper-line text-ink">
+<div class="bg-paper-subtle p-3.5 border border-paper-line rounded-sm">
+<span class="block text-[10px] font-mono text-ink-muted uppercase">STATUS AKADEMIK</span>
+<span class="font-mono font-bold text-sm text-ink">Mahasiswa Baru (Angkatan 2026)</span>
+</div>
+<div class="bg-paper-subtle p-3.5 border border-paper-line rounded-sm">
+<span class="block text-[10px] font-mono text-ink-muted uppercase">INSTITUSI</span>
+<span class="font-mono font-bold text-sm text-ink">Institut Teknologi PLN (ITPLN)</span>
+</div>
+<div class="bg-paper-subtle p-3.5 border border-paper-line rounded-sm">
+<span class="block text-[10px] font-mono text-ink-muted uppercase">FOKUS BIDANG</span>
+<span class="font-mono font-bold text-sm text-crimson">Algoritma &amp; Sistem</span>
+</div>
+<div class="bg-paper-subtle p-3.5 border border-paper-line rounded-sm">
+<span class="block text-[10px] font-mono text-ink-muted uppercase">PERAN DEBAT</span>
+<span class="font-mono font-bold text-sm text-bronze-dark">Pembicara Ketiga (Whip)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: About & Profile Section -->
+<section class="py-20 border-b border-paper-line bg-paper-subtle" id="profile" style="background-color: rgb(226, 237, 247); border-color: rgb(203, 219, 232);">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-12">
+<span class="text-xs font-mono font-bold tracking-widest text-crimson uppercase block mb-1">01 // TENTANG SKYVERO (VERO)</span>
+<h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-ink">DOSIR RESMI ARSIP</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Left Column: Portrait Resmi Menggunakan https://lh3.googleusercontent.com/aida-public/AB6AXuCHQnXc0AuVzKT57ZDn-7ymrZhEg8VEF3_jHtnfikOJTfeuHQo_xEvkqZdNgm2AV3KYMeOHw_DKTUmIZhMlOn0xHN2_uHjpA-YBQdzJvjkglPmJQmjq56I_DCCOTzyiYgB3kOKLtw4CzMJnE8Nz48pKFJ-3e20Zbuw1jI5206zg0IUzAybhPBVbGSeeMcM47IWR-yRKhv9PICturw0P6274mTe_wWJlVYSxuZH_lCFczdX_vt3LewM9 -->
+<div class="lg:col-span-5">
+<div class="bg-white border border-paper-line p-5 rounded-sm shadow-subtle-card">
+<div class="relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden rounded-sm mb-5 border-2 border-crimson/30 bg-[#9E1B28] shadow-inner">
+<img alt="Foto Resmi Skyvero Hidayatullah Pardi" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHQnXc0AuVzKT57ZDn-7ymrZhEg8VEF3_jHtnfikOJTfeuHQo_xEvkqZdNgm2AV3KYMeOHw_DKTUmIZhMlOn0xHN2_uHjpA-YBQdzJvjkglPmJQmjq56I_DCCOTzyiYgB3kOKLtw4CzMJnE8Nz48pKFJ-3e20Zbuw1jI5206zg0IUzAybhPBVbGSeeMcM47IWR-yRKhv9PICturw0P6274mTe_wWJlVYSxuZH_lCFczdX_vt3LewM9">
+<div class="absolute top-3 right-3 bg-primary-container text-white px-2 py-0.5 text-[9px] font-mono font-bold tracking-widest uppercase border border-white/20 shadow-sm">
+                ARSIP RESMI
+              </div>
+<div class="absolute bottom-3 left-3 bg-ink/90 backdrop-blur-sm text-white px-2.5 py-1 text-[10px] font-mono tracking-widest border border-white/20">
+                REF: VER-ID // 026
+              </div>
+</div>
+<!-- Metadata Specs Table -->
+<div class="space-y-2.5 font-mono text-xs text-ink-light pt-2 border-t border-paper-line">
+<div class="flex justify-between py-1 border-b border-paper-line/60">
+<span class="text-ink-muted">NAMA LENGKAP:</span>
+<span class="font-bold text-ink">Skyvero Hidayatullah Pardi</span>
+</div>
+<div class="flex justify-between py-1 border-b border-paper-line/60">
+<span class="text-ink-muted">PANGGILAN:</span>
+<span class="font-bold text-ink">Vero</span>
+</div>
+<div class="flex justify-between py-1 border-b border-paper-line/60">
+<span class="text-ink-muted">ASAL:</span>
+<span class="font-medium">Kab. Solok, Sumatera Barat</span>
+</div>
+<div class="flex justify-between py-1 border-b border-paper-line/60">
+<span class="text-ink-muted">KAMPUS:</span>
+<span class="font-medium">Institut Teknologi PLN (Jakarta)</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-ink-muted">PROGRAM STUDI:</span>
+<span class="font-semibold text-crimson">S1 Teknik Informatika</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Narrative Biography & Philosophy -->
+<div class="lg:col-span-7 space-y-6">
+<div class="bg-white border border-paper-line p-8 rounded-sm shadow-subtle-card space-y-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FFDAD8] border border-crimson/30 text-crimson text-xs font-mono font-semibold">
+              FONDASI AKADEMIK &amp; DEDIKASI KARYA
+            </div>
+<h3 class="text-2xl font-cinzel font-bold text-ink">
+              DEDIKASI PADA KETELITIAN ANALITIS, DEBAT DINAMIS, DAN ESTETIKA BERMAKNA
+            </h3>
+<div class="space-y-4 text-ink-muted leading-relaxed font-sans text-base">
+<p>
+                Halo, saya <strong>Skyvero Hidayatullah Pardi</strong> — biasa dipanggil <strong>Vero</strong>. Saya merupakan lulusan SMA (Juni 2026) asal Kabupaten Solok, Sumatera Barat, yang kini melanjutkan studi di jenjang <strong>S1 Teknik Informatika</strong> di <strong>Institut Teknologi PLN (ITPLN)</strong> di Jakarta Barat.
+              </p>
+<p>
+                Di bidang teknologi, fokus utama saya mencakup logika komputasional, algoritma dasar, arsitektur perangkat lunak, serta implementasi sistem yang efisien. Ketertarikan saya pada presisi berpikir terasah melalui keaktifan di dunia debat parlementer, di mana saya terbiasa bertindak sebagai <strong>Pembicara Ketiga (Whip)</strong> — menyintesis argumen, merekonstruksi benturan logika (clash), dan membedah esensi masalah di bawah tekanan waktu.
+              </p>
+<p>
+                Di luar perkuliahan dan coding, saya memperkaya perspektif melalui apresiasi mendalam terhadap narasi pop-culture Jepang seperti Tokusatsu (Kamen Rider &amp; Super Sentai), sinematografi, animasi, serta presisi mekanika dan kalkulasi <em>frame data</em> pada game pertarungan kompetitif. Perpaduan antara struktur disiplin dan apresiasi visual ini membentuk cara kerja saya dalam berkarya maupun menyelesaikan masalah.
+              </p>
+</div>
+<!-- Mini Highlight Cards -->
+<div class="pt-6 border-t border-paper-line grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs">
+<div class="p-3 bg-paper-subtle border border-paper-line rounded-sm">
+<span class="text-crimson font-bold block mb-1">01 / LOGIKA</span>
+<span class="text-ink font-medium">Pemikiran Algoritmik &amp; Fondasi Kode Bersih</span>
+</div>
+<div class="p-3 bg-paper-subtle border border-paper-line rounded-sm">
+<span class="text-bronze font-bold block mb-1">02 / RETORIKA</span>
+<span class="text-ink font-medium">Sintesis Argumen, Bantahan &amp; Resolusi Clash</span>
+</div>
+<div class="p-3 bg-paper-subtle border border-paper-line rounded-sm">
+<span class="text-forest font-bold block mb-1">03 / PRODUKSI</span>
+<span class="text-ink font-medium">Tata Letak Dokumen &amp; Percetakan Material Mandiri</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: About & Profile Section -->
+<!-- BEGIN: Media Cassette Archive Shelf -->
+<section class="py-20 border-b border-paper-line bg-paper" id="showcase" style="background-color: rgb(235, 243, 250); border-color: rgb(203, 219, 232);">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header & Filter Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 pb-6 border-b border-paper-line">
+<div>
+<span class="text-xs font-mono font-bold tracking-widest text-crimson uppercase block mb-1">02 // RAK ARSIP MEDIA</span>
+<h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-ink uppercase">RAK KOLEKSI ARSIP</h2>
+<p class="text-sm font-sans text-ink-muted mt-2 max-w-xl">
+            Rak arsip taktil interaktif yang mencatat tonggak prestasi, debat, publikasi, dan inspirasi kultural. Pilih kaset untuk melihat rincian arsip.
+          </p>
+</div>
+<!-- Filter tabs (Bahasa Indonesia) -->
+<div class="flex flex-wrap items-center gap-2 font-mono text-xs" role="tablist">
+<button class="shelf-tab px-3.5 py-1.5 border border-ink bg-ink text-white transition-all shadow-editorial" data-filter="all" type="button">SEMUA ARSIP</button>
+<button class="shelf-tab px-3.5 py-1.5 border border-paper-line bg-white text-ink hover:border-crimson transition-all" data-filter="academic" type="button">AKADEMIK &amp; TEKNO</button>
+<button class="shelf-tab px-3.5 py-1.5 border border-paper-line bg-white text-ink hover:border-crimson transition-all" data-filter="debate" type="button">DEBAT &amp; PIDATO</button>
+<button class="shelf-tab px-3.5 py-1.5 border border-paper-line bg-white text-ink hover:border-crimson transition-all" data-filter="craft" type="button">KARYA &amp; CETAK</button>
+<button class="shelf-tab px-3.5 py-1.5 border border-paper-line bg-white text-ink hover:border-crimson transition-all" data-filter="lore" type="button">SINEMA &amp; MINAT</button>
+</div>
+</div>
+<!-- Shelf Container Box -->
+<div class="bg-paper-subtle border border-paper-line p-6 sm:p-8 rounded-sm shadow-subtle-card" style="background-color: rgb(219, 233, 244); border-color: rgb(203, 219, 232);">
+<div class="flex items-center justify-between mb-4 pb-3 border-b border-paper-line">
+<span class="text-xs font-mono font-bold tracking-wider text-ink-muted flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-crimson"></span>
+            RAK KASET FISIK // 5 VOLUME TERSUSUN
+          </span>
+<div class="flex items-center gap-2">
+<button aria-label="Gulir rak ke kiri" class="p-2 border border-paper-line bg-white hover:border-ink hover:bg-paper transition-colors" id="shelf-scroll-left" title="Gulir ke Kiri">
+<svg class="w-4 h-4 text-ink" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<button aria-label="Gulir rak ke kanan" class="p-2 border border-paper-line bg-white hover:border-ink hover:bg-paper transition-colors" id="shelf-scroll-right" title="Gulir ke Kanan">
+<svg class="w-4 h-4 text-ink" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- VHS Cassette Rack -->
+<div class="shelf-track flex items-end gap-4 overflow-x-auto pb-6 pt-10 px-2 scroll-smooth" id="vhs-shelf-container">
+<!-- Tape 1: Perjalanan Informatika -->
+<article class="vhs-spine active-tape flex-shrink-0 w-24 sm:w-28 h-72 sm:h-80 bg-[#16171B] text-paper border border-[#2D2E36] rounded-t-sm flex flex-col justify-between p-2.5 select-none" data-accent="#9E1B28" data-badge="ITPLN-26 // LOGIKA &amp; SISTEM" data-category="academic" data-code="INF-01" data-desc="Studi S1 Teknik Informatika di Institut Teknologi PLN (ITPLN). Mendalami struktur data, logika komputasi, konsep berorientasi objek, dan metodologi rekayasa perangkat lunak." data-meta="Kampus: ITPLN Jakarta • Status: Mahasiswa Aktif • Program: S1 Teknik Informatika" data-period="2026 – SEKARANG" data-tag="TEKNOLOGI &amp; ALGORITMA" data-title="PERJALANAN INFORMATIKA">
+<div class="text-[9px] font-mono tracking-widest text-center border-b border-white/20 pb-1 text-emerald-400 font-bold">VOL. 01</div>
+<div class="spine-title-vertical text-xs sm:text-sm font-cinzel font-bold tracking-widest text-center uppercase my-auto text-paper">
+              PERJALANAN INFORMATIKA
+            </div>
+<div class="border-t border-white/20 pt-1 text-center font-mono text-[9px] text-white/70">
+<span>KASET</span><br><span class="text-emerald-400 font-bold">ITPLN</span>
+</div>
+</article>
+<!-- Tape 2: Pembicara Ketiga -->
+<article class="vhs-spine flex-shrink-0 w-24 sm:w-28 h-72 sm:h-80 bg-[#7A0016] text-paper border border-[#9E1B28] rounded-t-sm flex flex-col justify-between p-2.5 select-none" data-accent="#9E1B28" data-badge="ORATOR-03 // SPESIALIS WHIP" data-category="debate" data-code="DEB-02" data-desc="Rekam jejak kompetitif sebagai Pembicara Ketiga (Whip) dalam turnamen Debat Parlementer. Menguasai matriks bantahan waktu-nyata, sintesis argumen kompleks, dan resolusi benturan logika." data-meta="Format: Asian Parliamentary / WSDC • Posisi: Pembicara 3 (Whip) • Komunitas: Klub Bahasa Inggris" data-period="2024 – 2026" data-tag="DEBAT &amp; ORATORI" data-title="PEMBICARA KETIGA: RETORIKA &amp; CLASH">
+<div class="text-[9px] font-mono tracking-widest text-center border-b border-white/20 pb-1 text-amber-200 font-bold">VOL. 02</div>
+<div class="spine-title-vertical text-xs sm:text-sm font-cinzel font-bold tracking-widest text-center uppercase my-auto text-white">
+              PEMBICARA KETIGA
+            </div>
+<div class="border-t border-white/20 pt-1 text-center font-mono text-[9px] text-white/80">
+<span>KASET</span><br><span class="text-amber-200 font-bold">DEBAT</span>
+</div>
+</article>
+<!-- Tape 3: Prestasi & Olimpiade -->
+<article class="vhs-spine flex-shrink-0 w-24 sm:w-28 h-72 sm:h-80 bg-[#1D2A3A] text-paper border border-[#2E415A] rounded-t-sm flex flex-col justify-between p-2.5 select-none" data-accent="#775A00" data-badge="PRESTASI // NASIONAL &amp; KABUPATEN" data-category="academic" data-code="HON-03" data-desc="Meraih Co-9th Best Speaker tingkat nasional pada Taikai 2024 dan Juara 3 Olimpiade Bahasa Inggris Kabupaten Solok (MGMP Solok 2025)." data-meta="Penghargaan: Co-9th Speaker (Nasional Taikai 2024) | Juara 3 (MGMP Solok 2025)" data-period="2024 – 2025" data-tag="PRESTASI &amp; PENGHARGAAN" data-title="PRESTASI &amp; OLIMPIADE">
+<div class="text-[9px] font-mono tracking-widest text-center border-b border-white/20 pb-1 text-amber-300 font-bold">VOL. 03</div>
+<div class="spine-title-vertical text-xs sm:text-sm font-cinzel font-bold tracking-widest text-center uppercase my-auto text-amber-200">
+              PRESTASI &amp; OLIMPIADE
+            </div>
+<div class="border-t border-white/20 pt-1 text-center font-mono text-[9px] text-amber-300">
+<span>KASET</span><br><span>MEDALI</span>
+</div>
+</article>
+<!-- Tape 4: Material Mandiri -->
+<article class="vhs-spine flex-shrink-0 w-24 sm:w-28 h-72 sm:h-80 bg-[#B58E3C] text-ink border border-[#8C6D27] rounded-t-sm flex flex-col justify-between p-2.5 select-none" data-accent="#775A00" data-badge="KARYA-01 // PRAKSIS PRODUKSI" data-category="craft" data-code="MAN-04" data-desc="Keahlian tata letak dokumen, standarisasi karya ilmiah/makalah, perancangan slide presentasi, tabulasi spreadsheet, dan layanan cetak-jilid fisik mandiri." data-meta="Alat: MS Word, Excel, PowerPoint, Canva, Perangkat Cetak &amp; Penjilidan Fisik" data-period="KARYA BERKELANJUTAN" data-tag="TATA LETAK &amp; DOKUMEN" data-title="MATERIAL MANDIRI: CETAK &amp; KARYA DOKUMEN">
+<div class="text-[9px] font-mono tracking-widest text-center border-b border-ink/20 pb-1 text-ink font-bold">VOL. 04</div>
+<div class="spine-title-vertical text-xs sm:text-sm font-cinzel font-bold tracking-widest text-center uppercase my-auto text-ink">
+              MATERIAL MANDIRI
+            </div>
+<div class="border-t border-ink/20 pt-1 text-center font-mono text-[9px] font-bold text-ink">
+<span>KASET</span><br><span>CETAK</span>
+</div>
+</article>
+<!-- Tape 5: Tokusatsu & Lore -->
+<article class="vhs-spine flex-shrink-0 w-24 sm:w-28 h-72 sm:h-80 bg-[#251A24] text-paper border border-[#442B40] rounded-t-sm flex flex-col justify-between p-2.5 select-none" data-accent="#9E1B28" data-badge="SINEMA // ARSIP NARATIF" data-category="lore" data-code="LORE-05" data-desc="Apresiasi mendalam terhadap sinematografi Tokusatsu (Kamen Rider, Super Sentai), mekanika game pertarungan kompetitif (frame data &amp; mind games), dan seni komposisi naratif visual." data-meta="Ketertarikan: Sinematografi Tokusatsu, Game Pertarungan, Desain Cerita Visual" data-period="MINAT KREATIF" data-tag="NARASI &amp; SINEMA" data-title="TOKUSATSU &amp; MINAT POP-CULTURE">
+<div class="text-[9px] font-mono tracking-widest text-center border-b border-white/20 pb-1 text-rose-300 font-bold">VOL. 05</div>
+<div class="spine-title-vertical text-xs sm:text-sm font-cinzel font-bold tracking-widest text-center uppercase my-auto text-rose-200">
+              TOKUSATSU &amp; LORE
+            </div>
+<div class="border-t border-white/20 pt-1 text-center font-mono text-[9px] text-rose-300">
+<span>KASET</span><br><span>SINEMA</span>
+</div>
+</article>
+</div>
+<!-- Shelf Plinth Accent -->
+<div class="w-full h-4 bg-paper-darker border-t border-b border-paper-line relative">
+<div class="absolute inset-0 bg-gradient-to-r from-crimson/20 via-bronze/30 to-crimson/20"></div>
+</div>
+<!-- Featured Active Case Display -->
+<div class="mt-8 p-6 bg-white border border-paper-line rounded-sm shadow-subtle-card flex flex-col md:flex-row gap-8 items-stretch" id="active-display-box">
+<div class="w-full sm:w-72 flex-shrink-0 bg-paper-subtle border border-paper-line p-5 rounded-sm flex flex-col justify-between" id="preview-art-card">
+<div>
+<div class="flex items-center justify-between text-[10px] font-mono text-crimson font-bold tracking-widest uppercase pb-2 border-b border-paper-line">
+<span id="preview-badge">ITPLN-26 // LOGIKA &amp; SISTEM</span>
+<span class="w-2 h-2 rounded-full bg-crimson"></span>
+</div>
+<div class="mt-6 mb-8 text-center">
+<div class="text-[11px] font-mono tracking-widest text-ink-muted uppercase mb-1">ENTRI KASET ARSIP</div>
+<div class="font-cinzel font-extrabold text-2xl text-ink tracking-tight uppercase" id="preview-display-title">
+                  PERJALANAN INFORMATIKA
+                </div>
+<div class="w-12 h-1 bg-crimson mx-auto mt-3"></div>
+</div>
+<div class="bg-white border border-paper-line p-3 font-mono text-[10px] space-y-1.5 text-ink-light">
+<div class="flex justify-between">
+<span class="text-ink-muted">FORMAT:</span>
+<span class="font-bold text-ink">PITA AUDIO-DATA ANALOG</span>
+</div>
+<div class="flex justify-between">
+<span class="text-ink-muted">KODE INDEKS:</span>
+<span class="font-bold text-crimson" id="preview-code">INF-01</span>
+</div>
+<div class="flex justify-between">
+<span class="text-ink-muted">STATUS:</span>
+<span class="font-bold text-forest">TERKATALOGISASI</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-3 border-t border-paper-line flex items-center justify-between text-[10px] font-mono text-ink-muted">
+<span id="preview-period">2026 – SEKARANG</span>
+<span class="text-crimson font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-crimson"></span> KASET AKTIF
+              </span>
+</div>
+</div>
+<div class="flex-grow flex flex-col justify-between py-1 space-y-5">
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-3">
+<span class="text-xs font-mono font-bold px-2.5 py-0.5 bg-[#FFDAD8] text-crimson border border-crimson/30 rounded-sm" id="preview-tag">
+                  TEKNOLOGI &amp; ALGORITMA
+                </span>
+<span class="text-xs font-mono text-ink-muted" id="preview-category">
+                  KATEGORI: AKADEMIK &amp; TEKNOLOGI
+                </span>
+</div>
+<h3 class="text-2xl sm:text-3xl font-cinzel font-bold text-ink mb-3" id="preview-title">
+                PERJALANAN INFORMATIKA
+              </h3>
+<p class="text-sm sm:text-base text-ink-muted leading-relaxed font-sans" id="preview-desc">
+                Studi S1 Teknik Informatika di Institut Teknologi PLN (ITPLN). Mendalami struktur data, logika komputasi, konsep berorientasi objek, dan metodologi rekayasa perangkat lunak.
+              </p>
+</div>
+<div class="pt-5 border-t border-paper-line flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono">
+<div class="text-ink font-medium" id="preview-metadata">
+                Kampus: ITPLN Jakarta • Status: Mahasiswa Aktif • Program: S1 Teknik Informatika
+              </div>
+<div class="text-[11px] text-ink-muted flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-bronze"></span>
+<span>ENTRI ARSIP TERVERIFIKASI</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Media Cassette Archive Shelf -->
+<!-- BEGIN: Education & Honors Section -->
+<section class="py-20 border-b border-paper-line bg-paper-subtle" id="education" style="background-color: rgb(226, 237, 247); border-color: rgb(203, 219, 232);">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Column 1: Pendidikan Formal -->
+<div class="lg:col-span-6 space-y-8">
+<div>
+<span class="text-xs font-mono font-bold tracking-widest text-crimson uppercase block mb-1">03 // JALUR PENDIDIKAN</span>
+<h2 class="text-3xl font-cinzel font-bold text-ink uppercase">PENDIDIKAN</h2>
+<p class="text-sm text-ink-muted mt-1 font-sans">Fondasi performa akademik dan peminatan studi perguruan tinggi.</p>
+</div>
+<div class="space-y-6">
+<!-- ITPLN -->
+<div class="bg-white border border-paper-line p-6 rounded-sm shadow-subtle-card relative pl-6 border-l-4 border-l-crimson">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="text-xs font-mono font-bold px-2 py-0.5 bg-paper-subtle text-ink border border-paper-line">
+                  2026 – SEKARANG
+                </span>
+<span class="text-xs font-mono text-ink-muted">JAKARTA BARAT</span>
+</div>
+<h3 class="text-xl font-cinzel font-bold text-ink">Institut Teknologi PLN (ITPLN)</h3>
+<div class="text-xs font-mono font-semibold text-crimson mt-1">S1 Teknik Informatika – Sarjana</div>
+<p class="text-xs sm:text-sm text-ink-muted mt-3 leading-relaxed font-sans">
+                Fokus pada kurikulum inti ilmu komputer: struktur data, pola perancangan algoritmik, dasar sistem komputer, dan metodologi rekayasa perangkat lunak.
+              </p>
+<div class="mt-4 pt-3 border-t border-paper-line flex items-center justify-between text-[11px] font-mono text-ink-muted">
+<span>FAKULTAS: TELEMATIKA ENERGI</span>
+<span class="text-ink font-semibold">STATUS: MAHASISWA AKTIF</span>
+</div>
+</div>
+<!-- SMA Negeri 1 Gunung Talang -->
+<div class="bg-white border border-paper-line p-6 rounded-sm shadow-subtle-card relative pl-6 border-l-4 border-l-ink">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="text-xs font-mono font-bold px-2 py-0.5 bg-paper-subtle text-ink border border-paper-line">
+                  LULUS 2026
+                </span>
+<span class="text-xs font-mono text-ink-muted">KAB. SOLOK</span>
+</div>
+<h3 class="text-xl font-cinzel font-bold text-ink">SMA Negeri 1 Gunung Talang</h3>
+<div class="text-xs font-mono font-semibold text-ink mt-1">Ijazah Sekolah Menengah Atas // Nilai Rata-rata: 90.35</div>
+<p class="text-xs sm:text-sm text-ink-muted mt-3 leading-relaxed font-sans">
+                Menyelesaikan pendidikan menengah atas dengan predikat sangat memuaskan (Rata-rata 90.35). Mata pelajaran peminatan: Bahasa Inggris Tingkat Lanjut, Informatika, Biologi, dan Sosiologi. Aktif dalam forum debat dan kegiatan ekstrakurikuler.
+              </p>
+<div class="mt-4 pt-3 border-t border-paper-line flex items-center justify-between text-[11px] font-mono text-ink-muted">
+<span>PREDIKAT: NILAI 90.35</span>
+<span class="text-ink font-semibold">ANGKATAN 2026</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Prestasi & Penghargaan -->
+<div class="lg:col-span-6 space-y-8" id="achievements">
+<div>
+<span class="text-xs font-mono font-bold tracking-widest text-bronze-dark uppercase block mb-1">04 // RETORIKA &amp; PENGHARGAAN</span>
+<h2 class="text-3xl font-cinzel font-bold text-ink uppercase">PRESTASI &amp; PENGHARGAAN</h2>
+<p class="text-sm text-ink-muted mt-1 font-sans">Rekam jejak kompetisi debat dan olimpiade bahasa asing.</p>
+</div>
+<div class="space-y-6">
+<!-- Taikai 2024 -->
+<div class="bg-white border border-paper-line p-6 rounded-sm shadow-subtle-card relative pl-6 border-l-4 border-l-crimson">
+<div class="flex items-center justify-between mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-[#FFDAD8] text-crimson font-mono text-xs font-bold border border-crimson/30">
+                  ★ PRESTASI NASIONAL
+                </span>
+<span class="text-xs font-mono text-ink-muted">NOV 2024</span>
+</div>
+<h3 class="text-xl font-cinzel font-bold text-ink">
+                PENGHARGAAN CO-9TH BEST SPEAKER
+              </h3>
+<div class="text-xs font-mono font-semibold text-crimson mt-1">
+                Taikai 2024: The First National Foreign Language Olympiad
+              </div>
+<p class="text-xs sm:text-sm text-ink-muted mt-3 leading-relaxed font-sans">
+                Meraih peringkat pembicara terbaik ke-9 nasional di antara peserta debat SMA tingkat nasional di seluruh Indonesia. Diakui atas ketajaman dekonstruksi argumen dan bantahan substantif.
+              </p>
+<div class="mt-4 pt-3 border-t border-paper-line flex items-center justify-between text-[11px] font-mono text-ink-muted">
+<span>KATEGORI: DEBAT BAHASA INGGRIS</span>
+<span class="text-ink font-semibold">TINGKAT: NASIONAL</span>
+</div>
+</div>
+<!-- MGMP Solok 2025 -->
+<div class="bg-white border border-paper-line p-6 rounded-sm shadow-subtle-card relative pl-6 border-l-4 border-l-bronze">
+<div class="flex items-center justify-between mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-[#FFF2D6] text-bronze-dark font-mono text-xs font-bold border border-bronze/40">
+                  ★ JUARA TINGKAT KABUPATEN
+                </span>
+<span class="text-xs font-mono text-ink-muted">JAN 2025</span>
+</div>
+<h3 class="text-xl font-cinzel font-bold text-ink">
+                JUARA 3 // OLIMPIADE BAHASA INGGRIS
+              </h3>
+<div class="text-xs font-mono font-semibold text-ink mt-1">
+                The 1st English Olympiad 2025 Kabupaten Solok
+              </div>
+<p class="text-xs sm:text-sm text-ink-muted mt-3 leading-relaxed font-sans">
+                Diselenggarakan oleh MGMP Bahasa Inggris SMA Kabupaten Solok. Berhasil lolos melalui berbagai tahap penilaian tertulis dan babak speech/impromptu hingga meraih podium juara ke-3.
+              </p>
+<div class="mt-4 pt-3 border-t border-paper-line flex items-center justify-between text-[11px] font-mono text-ink-muted">
+<span>PENYELENGGARA: MGMP SMA KAB. SOLOK</span>
+<span class="text-bronze-dark font-semibold">PENGHARGAAN: JUARA 3</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Education & Honors Section -->
+<!-- BEGIN: Practical Toolkit & Material Mandiri -->
+<section class="py-20 border-b border-paper-line bg-paper" id="toolkit" style="background-color: rgb(235, 243, 250); border-color: rgb(203, 219, 232);">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mb-12">
+<span class="text-xs font-mono font-bold tracking-widest text-crimson uppercase block mb-1">05 // ALAT PRAKTIS</span>
+<h2 class="text-3xl sm:text-4xl font-cinzel font-bold text-ink uppercase">KEAHLIAN &amp; KARYA MATERIAL MANDIRI</h2>
+<p class="text-sm sm:text-base text-ink-muted font-sans mt-2">
+          Tata letak dokumen praktis, tabulasi spreadsheet, komposisi grafis visual, dan layanan reprografi fisik di bawah inisiatif Material Mandiri.
+        </p>
+</div>
+<!-- 5 Tool Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+<!-- Word -->
+<div class="bg-white border border-paper-line p-5 rounded-sm shadow-subtle-card flex flex-col justify-between hover:border-crimson transition-all">
+<div>
+<div class="w-10 h-10 bg-[#2B579A] text-white flex items-center justify-center font-mono font-bold text-base mb-4 rounded-sm shadow-sm">
+              W
+            </div>
+<h3 class="text-base font-cinzel font-bold text-ink">Microsoft Word</h3>
+<p class="text-xs font-sans text-ink-muted mt-2 leading-relaxed">
+              Penyusunan makalah ilmiah, kerapian margin standar, format kutipan, proposal, dan standarisasi dokumen akademik.
+            </p>
+</div>
+<div class="mt-5 pt-3 border-t border-paper-line text-[10px] font-mono text-[#2B579A] font-bold uppercase">
+            KARYA DOKUMEN
+          </div>
+</div>
+<!-- Excel -->
+<div class="bg-white border border-paper-line p-5 rounded-sm shadow-subtle-card flex flex-col justify-between hover:border-crimson transition-all">
+<div>
+<div class="w-10 h-10 bg-[#217346] text-white flex items-center justify-center font-mono font-bold text-base mb-4 rounded-sm shadow-sm">
+              X
+            </div>
+<h3 class="text-base font-cinzel font-bold text-ink">Microsoft Excel</h3>
+<p class="text-xs font-sans text-ink-muted mt-2 leading-relaxed">
+              Pengolahan lembar kerja, formula kalkulasi dasar, rekapitulasi data tabular, serta pembuatan laporan angka yang teratur.
+            </p>
+</div>
+<div class="mt-5 pt-3 border-t border-paper-line text-[10px] font-mono text-[#217346] font-bold uppercase">
+            TABULASI DATA
+          </div>
+</div>
+<!-- PowerPoint -->
+<div class="bg-white border border-paper-line p-5 rounded-sm shadow-subtle-card flex flex-col justify-between hover:border-crimson transition-all">
+<div>
+<div class="w-10 h-10 bg-primary-container text-white flex items-center justify-center font-mono font-bold text-base mb-4 rounded-sm shadow-sm">
+              P
+            </div>
+<h3 class="text-base font-cinzel font-bold text-ink">PowerPoint</h3>
+<p class="text-xs font-sans text-ink-muted mt-2 leading-relaxed">
+              Penyusunan slide presentasi seminar &amp; kelas, penataan ritme informasi, hierarki visual, dan kesiapan orasi.
+            </p>
+</div>
+<div class="mt-5 pt-3 border-t border-paper-line text-[10px] font-mono text-crimson font-bold uppercase">
+            SLIDE PRESENTASI
+          </div>
+</div>
+<!-- Canva Design -->
+<div class="bg-white border border-paper-line p-5 rounded-sm shadow-subtle-card flex flex-col justify-between hover:border-crimson transition-all">
+<div>
+<div class="w-10 h-10 bg-[#008F94] text-white flex items-center justify-center font-mono font-bold text-base mb-4 rounded-sm shadow-sm">
+              C
+            </div>
+<h3 class="text-base font-cinzel font-bold text-ink">Canva Design</h3>
+<p class="text-xs font-sans text-ink-muted mt-2 leading-relaxed">
+              Desain poster kegiatan, pamflet informasi, konten grafis presentasi, komposisi tipografi, dan aset visual modern.
+            </p>
+</div>
+<div class="mt-5 pt-3 border-t border-paper-line text-[10px] font-mono text-[#008F94] font-bold uppercase">
+            GRAFIS VISUAL
+          </div>
+</div>
+<!-- Cetak & Penjilidan -->
+<div class="bg-white border border-paper-line p-5 rounded-sm shadow-subtle-card flex flex-col justify-between hover:border-crimson transition-all">
+<div>
+<div class="w-10 h-10 bg-bronze-dark text-white flex items-center justify-center font-mono font-bold text-base mb-4 rounded-sm shadow-sm">
+              PR
+            </div>
+<h3 class="text-base font-cinzel font-bold text-ink">Print &amp; Binding</h3>
+<p class="text-xs font-sans text-ink-muted mt-2 leading-relaxed">
+              Pencetakan mandiri, fotokopi fisik, jilid spiral/lakban, pemotongan presisi, dan penanganan reprografi dokumen.
+            </p>
+</div>
+<div class="mt-5 pt-3 border-t border-paper-line text-[10px] font-mono text-bronze-dark font-bold uppercase">
+            MATERIAL MANDIRI
+          </div>
+</div>
+</div>
+<!-- Core Capabilities Strip -->
+<div class="mt-10 p-5 bg-paper-subtle border border-paper-line rounded-sm flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-ink">
+<div class="flex items-center gap-2">
+<span class="text-crimson">✦</span>
+<span>Standarisasi Makalah &amp; Penulisan Terstruktur</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-bronze">✦</span>
+<span>Desain Media Publikasi &amp; Poster Visual</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-forest">✦</span>
+<span>Perancangan Slide Materi Presentasi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-ink">✦</span>
+<span>Administrasi Tabular &amp; Eksekusi Cetak Fisik</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Practical Toolkit -->
+<!-- BEGIN: Contact Section -->
+<section class="py-24 bg-paper-subtle text-ink" id="contact" style="background-color: rgb(219, 233, 244);">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<div class="inline-flex items-center gap-2 text-xs font-mono font-bold text-crimson uppercase tracking-widest mb-3">
+<span class="w-2 h-2 rounded-full bg-crimson"></span>
+        06 // HUBUNGI &amp; KOLABORASI
+      </div>
+<h2 class="text-4xl sm:text-5xl font-cinzel font-extrabold tracking-tight text-ink uppercase mb-5">
+        MARI TERHUBUNG
+      </h2>
+<p class="text-base sm:text-lg text-ink-muted max-w-2xl mx-auto font-sans leading-relaxed mb-8">
+        Baik untuk mendiskusikan Ilmu Komputer, strategi debat bahasa Inggris, inspirasi sinematik, atau memerlukan bantuan persiapan dokumen, poster, dan materi presentasi — kotak masuk saya selalu terbuka.
+      </p>
+<!-- Email Pill & Salin Trigger -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+<a class="px-6 py-3.5 bg-ink text-paper font-mono text-sm font-semibold border border-ink hover:bg-primary-container hover:border-primary-container transition-colors shadow-editorial flex items-center gap-3" href="mailto:skyverohidayatullahpardi@gmail.com">
+<svg class="w-4 h-4 text-secondary-container" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span>skyverohidayatullahpardi@gmail.com</span>
+</a>
+<button class="px-5 py-3.5 bg-white text-ink font-mono text-sm font-semibold border border-paper-line hover:border-crimson transition-all shadow-subtle-card flex items-center gap-2" id="copy-email-btn" title="Salin alamat surel" type="button">
+<svg class="w-4 h-4 text-ink-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<span id="copy-btn-label">Salin Email</span>
+</button>
+</div>
+<!-- Notification Toast -->
+<div class="mt-4 inline-block opacity-0 transition-opacity duration-300 pointer-events-none text-xs font-mono font-bold px-3.5 py-1.5 bg-primary-container text-white rounded-sm shadow-sm" id="toast-notify">
+        EMAIL DISALIN KE CLIPBOARD!
+      </div>
+</div>
+</section>
+<!-- END: Contact Section -->
+</main>
+<!-- BEGIN: Site Footer -->
+<footer class="border-t border-paper-line bg-white py-10" data-purpose="site-footer" style="background-color: rgb(237, 244, 250); border-color: rgb(203, 219, 232);">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-mono text-ink-muted">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 bg-crimson rotate-45 inline-block"></span>
+<span class="font-semibold text-ink">© 2026 Skyvero Hidayatullah Pardi</span>
+<span>•</span>
+<span>S1 TEKNIK INFORMATIKA ITPLN</span>
+</div>
+<div class="text-ink-muted">
+      Arsip Akademik Editorial // Jakarta – Solok
+    </div>
+<div>
+<a class="hover:text-crimson transition-colors uppercase tracking-widest text-[11px] underline underline-offset-4" href="#hero">
+        KEMBALI KE ATAS ↑
+      </a>
+</div>
+</div>
+</footer>
+<!-- END: Site Footer -->
+<!-- BEGIN: Interactive Engine Scripts -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. VHS Cassette Selection and Live Inspection Display
+    const tapes = document.querySelectorAll('.vhs-spine');
+    const shelfContainer = document.getElementById('vhs-shelf-container');
+    const scrollLeftBtn = document.getElementById('shelf-scroll-left');
+    const scrollRightBtn = document.getElementById('shelf-scroll-right');
+
+    const prevBadge = document.getElementById('preview-badge');
+    const prevDisplayTitle = document.getElementById('preview-display-title');
+    const prevCode = document.getElementById('preview-code');
+    const prevPeriod = document.getElementById('preview-period');
+    const prevTag = document.getElementById('preview-tag');
+    const prevCategory = document.getElementById('preview-category');
+    const prevTitle = document.getElementById('preview-title');
+    const prevDesc = document.getElementById('preview-desc');
+    const prevMetadata = document.getElementById('preview-metadata');
+
+    tapes.forEach(tape => {
+      tape.addEventListener('click', () => {
+        tapes.forEach(t => t.classList.remove('active-tape'));
+        tape.classList.add('active-tape');
+
+        const ds = tape.dataset;
+        if (prevBadge) prevBadge.textContent = ds.badge || '';
+        if (prevDisplayTitle) prevDisplayTitle.textContent = ds.title ? ds.title.split(':')[0] : 'PERJALANAN INFORMATIKA';
+        if (prevCode) prevCode.textContent = ds.code || 'INF-01';
+        if (prevPeriod) prevPeriod.textContent = ds.period || '';
+        if (prevTag) prevTag.textContent = ds.tag || '';
+        
+        let catLabel = 'AKADEMIK & TEKNOLOGI';
+        if (ds.category === 'debate') catLabel = 'DEBAT & PIDATO';
+        else if (ds.category === 'craft') catLabel = 'KARYA & CETAK';
+        else if (ds.category === 'lore') catLabel = 'SINEMA & MINAT';
+        if (prevCategory) prevCategory.textContent = `KATEGORI: ${catLabel}`;
+        
+        if (prevTitle) prevTitle.textContent = ds.title || '';
+        if (prevDesc) prevDesc.textContent = ds.desc || '';
+        if (prevMetadata) prevMetadata.textContent = ds.meta || '';
+      });
+    });
+
+    // 2. Shelf Arrows
+    if (scrollLeftBtn && shelfContainer) {
+      scrollLeftBtn.addEventListener('click', () => {
+        shelfContainer.scrollBy({ left: -220, behavior: 'smooth' });
+      });
+    }
+    if (scrollRightBtn && shelfContainer) {
+      scrollRightBtn.addEventListener('click', () => {
+        shelfContainer.scrollBy({ left: 220, behavior: 'smooth' });
+      });
+    }
+
+    // 3. Category Filter Tabs
+    const filterButtons = document.querySelectorAll('.shelf-tab');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-ink', 'text-white', 'shadow-editorial');
+          b.classList.add('bg-white', 'text-ink');
+        });
+        btn.classList.add('bg-ink', 'text-white', 'shadow-editorial');
+        btn.classList.remove('bg-white', 'text-ink');
+
+        let firstVisible = null;
+        tapes.forEach(tape => {
+          const cat = tape.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            tape.style.display = 'flex';
+            if (!firstVisible) firstVisible = tape;
+          } else {
+            tape.style.display = 'none';
+          }
+        });
+
+        if (firstVisible) {
+          firstVisible.click();
+        }
+      });
+    });
+
+    // 4. Email Copy to Clipboard Feature
+    const copyBtn = document.getElementById('copy-email-btn');
+    const copyLabel = document.getElementById('copy-btn-label');
+    const toastNotify = document.getElementById('toast-notify');
+    const email = 'skyverohidayatullahpardi@gmail.com';
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(email);
+          showToast();
+        } catch (err) {
+          const temp = document.createElement('input');
+          temp.value = email;
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand('copy');
+          document.body.removeChild(temp);
+          showToast();
+        }
+      });
+    }
+
+    function showToast() {
+      if (copyLabel) copyLabel.textContent = 'Disalin!';
+      if (toastNotify) {
+        toastNotify.classList.remove('opacity-0');
+        toastNotify.classList.add('opacity-100');
+        setTimeout(() => {
+          toastNotify.classList.remove('opacity-100');
+          toastNotify.classList.add('opacity-0');
+          if (copyLabel) copyLabel.textContent = 'Salin Email';
+        }, 2500);
+      }
+    }
+  });
+</script>
+<!-- END: Interactive Engine Scripts -->
+
+
+</body></html>

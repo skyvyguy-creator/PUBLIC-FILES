@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7a0016;
+  --color-primary-container: #9e1b28;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ffafad;
+  --color-secondary: #775a00;
+  --color-secondary-container: #fed269;
+  --color-secondary-fixed: #ffdf99;
+  --color-surface: #fbf8ff;
+  --color-surface-bright: #fbf8ff;
+  --color-surface-dim: #dad9e3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f2fd;
+  --color-surface-container: #eeedf7;
+  --color-surface-container-high: #e8e7f1;
+  --color-surface-container-highest: #e3e1ec;
+  --color-background: #fbf8ff;
+  --color-on-background: #1a1b22;
+  --color-on-surface: #1a1b22;
+  --color-on-surface-variant: #594140;
+  --color-outline: #8d706f;
+  --color-outline-variant: #e1bfbd;
+
+  --color-paper: #ebf3fa;
+  --color-paper-subtle: #f4efea;
+  --color-paper-section: #e2edf7;
+  --color-paper-shelf: #dbe9f4;
+  --color-paper-footer: #edf4fa;
+  --color-paper-darker: #eae3d7;
+  --color-paper-line: #cbdbe8;
+  --color-paper-warm-line: #dcd4c7;
+
+  --color-ink: #1a1b22;
+  --color-ink-light: #2e3038;
+  --color-ink-muted: #594140;
+  --color-ink-soft: #7e6b6a;
+
+  --color-crimson: #9e1b28;
+  --color-crimson-dark: #7a0016;
+  --color-crimson-light: #ffdad8;
+  --color-crimson-border: #e1bfbd;
+
+  --color-bronze: #775a00;
+  --color-bronze-muted: #c5a059;
+  --color-bronze-light: #fff2d6;
+  --color-bronze-dark: #5a4300;
+
+  --color-forest: #1e6346;
+  --color-forest-light: #edf6f1;
+
+  --font-cinzel: "Cinzel", Georgia, serif;
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --shadow-subtle-card: 0 4px 20px -2px rgba(26, 27, 34, 0.05), 0 2px 6px -1px rgba(26, 27, 34, 0.03);
+  --shadow-editorial: 5px 5px 0px #1a1b22;
+  --shadow-editorial-crimson: 5px 5px 0px #9e1b28;
+  --shadow-editorial-bronze: 5px 5px 0px #775a00;
+}
+
+@layer base {
+  body {
+    background-color: #ebf3fa;
+    color: #1a1b22;
+    font-family: var(--font-sans);
+    background-image: radial-gradient(rgba(30, 60, 90, 0.06) 1px, transparent 0px);
+    background-size: 28px 28px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Shelf Horizontal Scroll Track */
+.shelf-track::-webkit-scrollbar {
+  height: 6px;
+}
+.shelf-track::-webkit-scrollbar-track {
+  background: #eae3d7;
+  border-radius: 9999px;
+}
+.shelf-track::-webkit-scrollbar-thumb {
+  background: #9e1b28;
+  border-radius: 9999px;
+}
+
+/* Pure Typographic Tactile Cassette Spine */
+.vhs-spine {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+}
+.vhs-spine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3px;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.22);
+  pointer-events: none;
+}
+.vhs-spine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 3px;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+}
+.vhs-spine:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 16px 24px -6px rgba(26, 27, 34, 0.35);
+}
+.vhs-spine.active-tape {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 30px -8px rgba(158, 27, 40, 0.45), 0 0 0 2px #9e1b28;
+}
+
+/* Vertical Spine Typography */
+.spine-title-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vhs-spine {
+    transition: none;
+  }
+}
